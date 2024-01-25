@@ -1,0 +1,47 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  width: 100%;
+  max-width: 1240px;
+  margin: 45px auto 50px;
+
+  .navigation {
+    ul {
+      display: flex;
+      a {
+        @include font;
+        text-decoration: none;
+        margin-left: 56px;
+        color: $third_color;
+        font-size: 1.5em;
+        font-weight: 500;
+      }
+      .nav-active {
+        position: relative;
+        &::after {
+          content: "";
+          height: 2px;
+          width: 0;
+          background-color: $third_color;
+          position: absolute;
+          border-radius: 10px;
+          bottom: 5pxpx;
+          left: 50%;
+          transform: translateX(-50%);
+          animation: anim 400ms ease forwards;
+
+          @keyframes anim {
+            to {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
