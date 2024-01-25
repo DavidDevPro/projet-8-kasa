@@ -1,0 +1,14 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.aboutBanner {
+  width: 100%;
+  max-width: 1240px;
+  height: 223px;
+  margin: 0 auto 43px;
+
+  img {
+    border-radius: 25px;
+    filter: brightness(60%);
+  }
+}
