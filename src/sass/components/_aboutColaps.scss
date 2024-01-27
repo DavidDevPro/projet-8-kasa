@@ -1,0 +1,29 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.colapsContainer {
+  width: 100%;
+  max-width: 1024px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  gap: 30px;
+
+  .colapsHead {
+    width: 100%;
+    height: 54px;
+    background-color: $third_color;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+      color: $primary_color;
+      @include font;
+      font-weight: 500;
+    }
+  }
+}
