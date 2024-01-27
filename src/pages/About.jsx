@@ -1,12 +1,15 @@
 import React from "react";
 import AboutBanner from "../components/AboutBanner";
-import Colaps from "../components/Colaps";
+import DropList from "../components/DropList";
+import dataDropList from "../data/dropList.json";
 
 const About = () => {
   return (
     <div className="aboutPage">
       <AboutBanner />
-      <Colaps />
+      {dataDropList.map((dataList, index) => (
+        <DropList key={index} index={index} title={dataList.title}></DropList>
+      ))}
     </div>
   );
 };

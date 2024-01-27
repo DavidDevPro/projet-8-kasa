@@ -10,7 +10,12 @@ header {
   max-width: 1240px;
   margin: 45px auto 50px;
 
+  img {
+    padding-left: 10px;
+  }
+
   .navigation {
+    padding: 0 10px;
     ul {
       display: flex;
       a {

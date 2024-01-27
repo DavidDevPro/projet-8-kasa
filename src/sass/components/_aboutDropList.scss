@@ -1,29 +1,26 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
-.colapsContainer {
+.dropListContainer {
   width: 100%;
   max-width: 1024px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
   margin: auto;
-  flex-direction: column;
-  gap: 30px;
 
-  .colapsHead {
-    width: 100%;
+  .dropListHead {
     height: 54px;
     background-color: $third_color;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 0 20px 0 15px;
 
     h3 {
       color: $primary_color;
       @include font;
       font-weight: 500;
+      font-size: 1.5em;
     }
   }
 }
