@@ -7,6 +7,7 @@
   margin: auto;
 
   .dropListHead {
+    @include transition;
     height: 54px;
     background-color: $third_color;
     border-radius: 10px;
@@ -16,11 +17,32 @@
     margin-bottom: 30px;
     padding: 0 20px 0 15px;
 
+    @media screen and (max-width: 1024px) {
+      height: 42px;
+      margin-bottom: 25px;
+      border-radius: 7.5px;
+      padding: 0 17px 0 12.5px;
+    }
+    @media screen and (max-width: 768px) {
+      height: 30px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      padding: 0 13px 0 10px;
+    }
+
     h3 {
+      @include transition;
       color: $primary_color;
       @include font;
       font-weight: 500;
       font-size: 1.5em;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 1.25em;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 1em;
+      }
     }
   }
 }

@@ -2,3 +2,8 @@
 @mixin font {
   font-family: "Montserrat", sans-serif;
 }
+
+/********** mixin transition **********/
+@mixin transition {
+  transition: all 400ms ease-in-out;
+}
