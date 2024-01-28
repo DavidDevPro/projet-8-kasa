@@ -1,11 +1,11 @@
 import React from "react";
 import arrowSvg from "../assets/img/arrow.svg";
 
-const DropList = () => {
+const DropList = (props) => {
   return (
     <div className="dropListContainer">
       <div className="dropListHead">
-        <h3>test</h3>
+        <h3>{props.title}</h3>
         <img className="arrowStatic" src={arrowSvg} alt="fléche drop list" />
       </div>
     </div>

@@ -7,8 +7,8 @@ const About = () => {
   return (
     <div className="aboutPage">
       <AboutBanner />
-      {dataDropList.map((dataList, index) => (
-        <DropList key={index} index={index} title={dataList.title}></DropList>
+      {dataDropList.map((dataList, data) => (
+        <DropList key={data} data={data} title={dataList.title}></DropList>
       ))}
     </div>
   );
