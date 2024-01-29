@@ -8,6 +8,7 @@
 
   .dropListHead {
     @include transition;
+    @include shadow;
     height: 54px;
     background-color: $third_color;
     border-radius: 10px;

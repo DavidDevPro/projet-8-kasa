@@ -6,7 +6,7 @@ console.log(locations);
 const Gallery = () => {
   return (
     <div className="gallery">
-      <CardLocation />
+      <CardLocation locations={locations} />
     </div>
   );
 };
