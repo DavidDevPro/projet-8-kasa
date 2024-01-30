@@ -2,32 +2,27 @@
 @import "../utils/mixins";
 
 .dropListContainer {
-  width: 100%;
   max-width: 1024px;
   margin: auto;
 
   .dropListHead {
     @include transition;
-    @include shadow;
-    height: 54px;
     background-color: $third_color;
-    border-radius: 10px;
+    height: 52px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 30px;
-    padding: 0 20px 0 15px;
+    border-radius: 5px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
 
     @media screen and (max-width: 1024px) {
       height: 42px;
-      margin-bottom: 25px;
-      border-radius: 7.5px;
       padding: 0 17px 0 12.5px;
     }
     @media screen and (max-width: 768px) {
       height: 30px;
-      margin-bottom: 20px;
-      border-radius: 5px;
       padding: 0 13px 0 10px;
     }
 
@@ -44,6 +39,50 @@
       @media screen and (max-width: 768px) {
         font-size: 1em;
       }
+    }
+    .arrow {
+      cursor: pointer;
+      transition: transform 0.4s ease-in-out;
+      height: 24px;
+      width: 24px;
+      &.down {
+        transform: rotate(-180deg);
+      }
+      @media screen and (max-width: 768px) {
+        height: 18px;
+        width: 18px;
+      }
+    }
+  }
+  .content {
+    @include font;
+    background-color: $gallery_color;
+    color: $third_color;
+    font-size: 1.15em;
+    line-height: 1.5em;
+    transform: translateY(-52px);
+    transition: transform 0.7s ease-in-out;
+    opacity: 0;
+    height: 0;
+    border-radius: 0 0 10px 10px;
+    padding: 25px 20px 20px;
+    margin: -5px 0 0px;
+    box-sizing: border-box;
+    @media screen and (max-width: 1024px) {
+      transform: translateY(-30px);
+      font-size: 1.05em;
+    }
+    @media screen and (max-width: 768px) {
+      transform: translateY(-20px);
+      padding: 15px 15px;
+      font-size: 0.9em;
+    }
+
+    &.animate {
+      opacity: 1;
+      transform: translateY(0px);
+      height: max-content;
+      margin-bottom: 30px;
     }
   }
 }
