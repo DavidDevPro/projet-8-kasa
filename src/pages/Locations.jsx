@@ -1,10 +1,9 @@
-import React from "react";
-import Caroussel from "../components/Caroussel";
+import CustomerCard from "../components/CustomerCard";
 
 const Locations = () => {
   return (
     <div className="locationPage">
-      <Caroussel />
+      <CustomerCard />
     </div>
   );
 };
