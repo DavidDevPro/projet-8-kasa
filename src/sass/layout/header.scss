@@ -23,6 +23,7 @@ header {
   img {
     @include transition;
     padding-left: 19px;
+    height: 68px;
 
     @media screen and (max-width: 768px) {
       width: 145px;

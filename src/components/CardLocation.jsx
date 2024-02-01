@@ -6,8 +6,8 @@ const CardLocation = ({ locations }) => {
   return (
     <>
       {locations.map((location) => (
-        <div key={location.id} className="cardLocation">
-          <NavLink to={`/locations`}>
+        <div key={`routePaths${location.id}`} className="cardLocation">
+          <NavLink to={`/locations/${location.id}`}>
             <img src={location.cover} alt={`picture ${location.title}`} />
             <h2>{location.title}</h2>
           </NavLink>

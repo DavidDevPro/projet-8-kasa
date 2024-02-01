@@ -1,11 +1,7 @@
 import React from "react";
 
 const Caroussel = () => {
-  return (
-    <div className="caroussel">
-      <div className="caroussel-img"></div>
-    </div>
-  );
+  return <div className="caroussel"></div>;
 };
 
 export default Caroussel;
