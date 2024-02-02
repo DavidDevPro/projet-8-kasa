@@ -17,7 +17,7 @@
 		},
 		"rating": "5",
 		"location": "Île de France - Paris 17e",
-		"équipements": [
+		"equipements": [
 			"Équipements de base",
 			"Micro-ondes",
 			"Douche italienne",
@@ -48,7 +48,7 @@
 		},
 		"rating": "4",
 		"location": "Île de France - Paris 10e",
-		"équipements": [
+		"equipements": [
 			"Parking",
 			"Sèche Cheveux",
 			"Machine à laver",
@@ -79,7 +79,7 @@
 		},
 		"rating": "3",
 		"location": "Île de France - Paris 20e",
-		"équipements": [
+		"equipements": [
 			"Wifi",
 			"Cuisine équipée",
 			"Télévision",
@@ -108,7 +108,7 @@
 		},
 		"rating": "3",
 		"location": "Île de France - Paris 11e",
-		"équipements": [
+		"equipements": [
 			"Micro-ondes",
 			"Wifi",
 			"Chambre Séparée",
@@ -141,7 +141,7 @@
 		},
 		"rating": "5",
 		"location": "Île de France - Paris 10e",
-		"équipements": [
+		"equipements": [
 			"Frigo Américain",
 			"Sèche Cheveux",
 			"Wifi",
@@ -171,7 +171,7 @@
 		},
 		"rating": "5",
 		"location": "Île de France - Paris 18e",
-		"équipements": [
+		"equipements": [
 			"Chambre Séparée",
 			"Parking"
 		],
@@ -198,7 +198,7 @@
 		},
 		"rating": "3",
 		"location": "Île de France - Paris 18e",
-		"équipements": [
+		"equipements": [
 			"Salle de bains",
 			"Frigo",
 			"Wifi",
@@ -231,7 +231,7 @@
 		},
 		"rating": "5",
 		"location": "Île de France - Paris 6e",
-		"équipements": [
+		"equipements": [
 			"Wifi",
 			"Sèche Cheveux",
 			"Machine à laver",
@@ -264,7 +264,7 @@
 		},
 		"rating": "4",
 		"location": "Île de France - Paris 14e",
-		"équipements": [
+		"equipements": [
 			"Climatisation",
 			"Machine à laver",
 			"Sèche Cheveux",
@@ -294,7 +294,7 @@
 		},
 		"rating": "3",
 		"location": "Île de France - Paris 11e",
-		"équipements": [
+		"equipements": [
 			"Vue Parc",
 			"Chauffage",
 			"Sèche linge",
@@ -326,7 +326,7 @@
 		},
 		"rating": "4",
 		"location": "Île de France - Paris 11e",
-		"équipements": [
+		"equipements": [
 			"Clic-clac",
 			"Quatre",
 			"Sèche Cheveux",
@@ -355,7 +355,7 @@
 		},
 		"rating": "3",
 		"location": "Île de France - Paris 3e",
-		"équipements": [
+		"equipements": [
 			"Rangements",
 			"Allumé",
 			"Sèche Cheveux",
@@ -389,7 +389,7 @@
 		},
 		"rating": "5",
 		"location": "Ile de France - Ecouen",
-		"équipements": [
+		"equipements": [
 			"SDB",
 			"Cuisine équipée",
 			"Toilettes sèches",
@@ -420,7 +420,7 @@
 		},
 		"rating": "4",
 		"location": "Île de France - Arnouville",
-		"équipements": [
+		"equipements": [
 			"SDB",
 			"Cuisine équipée",
 			"Frigo",
@@ -454,7 +454,7 @@
 		},
 		"rating": "3",
 		"location": "Île de France - Arnouville",
-		"équipements": [
+		"equipements": [
 			"Bouilloire",
 			"SDB",
 			"Cuisine équipée",
@@ -489,8 +489,8 @@
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-10.jpg"
 		},
 		"rating": "3",
-		"localisation": "Île de France - La Défense",
-		"équipements": [
+		"location": "Île de France - La Défense",
+		"equipements": [
 			"Baie vitrée",
 			"Télévision",
 			"Quatre",
@@ -523,7 +523,7 @@
 		},
 		"rating": "4",
 		"location": "Île de France - Levallois",
-		"équipements": [
+		"equipements": [
 			"Télévision",
 			"Quatre",
 			"Frigo",
@@ -550,7 +550,7 @@
 		},
 		"rating": "2",
 		"location": "Île de France - Paris 20e",
-		"équipements": [
+		"equipements": [
 			"Bouilloire",
 			"Wifi",
 			"Micro-ondes"
@@ -576,7 +576,7 @@
 		},
 		"rating": "4",
 		"location": "Île de France - Paris 13e",
-		"équipements": [
+		"equipements": [
 			"Équipements de base",
 			"Quatre",
 			"Frigo",
@@ -598,12 +598,12 @@
 		],
 		"description": "Au coeur du quartier historique du Marais, cet appartement est idéal pour un couple à la découverte de Paris. Situé sur la rue de Rivoli, il est à 5 minutes du Louvre.",
 		"host": {
-			"nom": "Nathalie Jean",
+			"name": "Nathalie Jean",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg"
 		},
 		"rating": "4",
 		"location": "Île de France - Paris 13e",
-		"équipements": [
+		"equipements": [
 			"Wifi",
 			"Équipements de base",
 			"Micro-ondes",
