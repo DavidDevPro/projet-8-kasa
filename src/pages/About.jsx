@@ -1,15 +1,15 @@
 import React from "react";
 import AboutBanner from "../components/AboutBanner";
 import DropList from "../components/DropList";
-import dropListData from "../data/dropList.json";
+import itemsData from "../data/dropList.json";
 
 const About = () => {
   return (
     <div className="aboutPage">
       <AboutBanner />
-      {dropListData.map((dataItem, index) => (
-        <DropList key={index} title={dataItem.title}>
-          {dataItem.text}
+      {itemsData.map((Item) => (
+        <DropList key={Item.id} title={Item.title}>
+          {Item.text}
         </DropList>
       ))}
     </div>
