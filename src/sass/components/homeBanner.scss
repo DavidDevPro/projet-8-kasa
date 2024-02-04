@@ -7,6 +7,16 @@
   display: flex;
   justify-content: center;
   margin-bottom: 43px;
+  animation: delai ease-in-out 800ms;
+
+  @keyframes delai {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
   @media screen and (max-width: 1024px) {
     margin-bottom: 33px;

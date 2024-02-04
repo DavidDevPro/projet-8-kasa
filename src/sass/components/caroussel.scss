@@ -3,11 +3,25 @@
 
 .caroussel {
   @include transition;
+  @include shadow;
   width: 100%;
   max-width: 1240px;
   margin: 0 auto 30px;
   height: 415px;
   position: relative;
+  border-radius: 25px;
+  animation: delay ease-in-out 1000ms;
+
+  @keyframes delay {
+    0% {
+      opacity: 0;
+      width: 0;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
   @media screen and (max-width: 1024px) {
     height: 315px;
   }
