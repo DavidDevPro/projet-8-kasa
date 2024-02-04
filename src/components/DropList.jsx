@@ -3,23 +3,23 @@ import pt from "prop-types";
 import arrowIcon from "../assets/img/arrow.svg";
 
 const DropList = ({ title, children }) => {
-  const [visible, setVisible] = useState(false);
+  const [clicked, setClicked] = useState(false);
 
-  const toggle = () => {
-    setVisible(!visible);
+  const HandleToggle = () => {
+    setClicked(!clicked);
   };
 
   return (
-    <div className={`dropListContainer ${visible ? "visible" : ""}`}>
-      <div className="dropListHead" onClick={toggle}>
+    <div className="dropListContent">
+      <div className="headDropList" onClick={HandleToggle}>
         <h3>{title}</h3>
         <img
           src={arrowIcon}
           alt="flèche"
-          className={`arrow ${visible ? "down" : ""}`}
+          className={`arrow ${clicked ? "turn" : ""}`}
         />
       </div>
-      <div className={`content ${visible ? "animate" : ""}`}>{children}</div>
+      <div className={`content ${clicked ? "open" : ""}`}>{children}</div>
     </div>
   );
 };

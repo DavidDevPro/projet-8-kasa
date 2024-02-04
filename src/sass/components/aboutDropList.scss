@@ -1,11 +1,11 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
-.dropListContainer {
+.dropListContent {
   max-width: 1024px;
   margin: auto;
 
-  .dropListHead {
+  .headDropList {
     @include transition;
     background-color: $third_color;
     height: 52px;
@@ -45,7 +45,7 @@
       transition: transform 0.4s ease-in-out;
       height: 24px;
       width: 24px;
-      &.down {
+      &.turn {
         transform: rotate(-180deg);
       }
       @media screen and (max-width: 768px) {
@@ -78,7 +78,7 @@
       font-size: 0.9em;
     }
 
-    &.animate {
+    &.open {
       opacity: 1;
       transform: translateY(0px);
       height: max-content;

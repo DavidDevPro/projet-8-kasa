@@ -1,9 +1,10 @@
-import CustomerCard from "../components/CustomerCard";
+
+import LocationContent from "../components/LocationContent";
 
 const Locations = () => {
   return (
     <div className="locationPage">
-      <CustomerCard />
+      <LocationContent />
     </div>
   );
 };

@@ -10,9 +10,7 @@
 @use "layout/footer";
 @use "components/homeBanner";
 @use "components/homeGallery";
-@use "./components/cardLocation";
-@use "components/error404Content";
 @use "components/aboutBanner";
 @use "components/aboutDropList";
-@use "components/locationCaroussel";
-@use "components/locationCustomerId";
+@use "components/caroussel";
+@use "components/locationContent";

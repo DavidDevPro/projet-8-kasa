@@ -1,12 +1,15 @@
 import React from "react";
 import HomeBanner from "../components/HomeBanner";
-import Gallery from "../components/Gallery";
+import HomeGallery from "../components/HomeGallery";
+import locations from "../data/locations.json"
+
 
 const Home = () => {
   return (
     <div className="homePage">
       <HomeBanner />
-      <Gallery />
+      <HomeGallery locations={locations}/>
+      
     </div>
   );
 };
