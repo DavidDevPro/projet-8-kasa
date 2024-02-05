@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Error404 = () => {
+function Error() {
   return (
     <div className="pageError404">
       <h1>404</h1>
@@ -9,6 +9,6 @@ const Error404 = () => {
       <NavLink to="/">Retourner sur la page d'accueil</NavLink>
     </div>
   );
-};
+}
 
-export default Error404;
+export default Error;

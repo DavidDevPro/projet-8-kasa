@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Locations from "./pages/Locations";
-import Error from "./pages/Error";
+import Error from "./pages/Error404";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -15,7 +15,7 @@ const AdminRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/locations/:id" element={<Locations />} />
-        <Route path="/error" element={<Error />} />
+        <Route path="/error404" element={<Error />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
