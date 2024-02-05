@@ -7,10 +7,17 @@ const Caroussel = ({ slides }) => {
   const currentSlide = slides[currentIndex];
   const numSlides = slides.length;
 
-  const handleIndexChange = (increment) => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex + increment + numSlides) % numSlides
-    );
+  const updateIndex = (increment) => {
+    setCurrentIndex((lastIndex) => {
+      let newIndex = lastIndex + increment;
+
+      if (newIndex >= numSlides) {
+        newIndex = 0;
+      } else if (newIndex < 0) {
+        newIndex = numSlides - 1;
+      }
+      return newIndex;
+    });
   };
 
   const shouldShowArrows = numSlides > 1;
@@ -29,13 +36,13 @@ const Caroussel = ({ slides }) => {
             className="arrowRight"
             src={arrowRight}
             alt="Flèche Droite"
-            onClick={() => handleIndexChange(1)}
+            onClick={() => updateIndex(1)}
           />
           <img
             className="arrowLeft"
             src={arrowLeft}
             alt="Flèche Gauche"
-            onClick={() => handleIndexChange(-1)}
+            onClick={() => updateIndex(-1)}
           />
         </>
       )}

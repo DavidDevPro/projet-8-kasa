@@ -10,6 +10,7 @@ const LocationContent = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const location = locations.find((item) => item.id === id);
+  console.log(location.id);
 
   useEffect(() => {
     if (!location) {
