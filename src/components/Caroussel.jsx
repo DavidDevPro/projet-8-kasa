@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React, { useState } from "react";
 import arrowRight from "../assets/img/arrowRight.svg";
 import arrowLeft from "../assets/img/arrowLeft.svg";
@@ -53,6 +54,10 @@ const Caroussel = ({ slides }) => {
       )}
     </div>
   );
+};
+
+Caroussel.propTypes = {
+  slides: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Caroussel;

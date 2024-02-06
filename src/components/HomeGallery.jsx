@@ -1,8 +1,8 @@
+import PropTypes from "prop-types";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-
-const HomeGallery = ({locations}) => {
+const HomeGallery = ({ locations }) => {
   return (
     <div className="gallery">
       {locations.map((location) => (
@@ -14,9 +14,17 @@ const HomeGallery = ({locations}) => {
         </div>
       ))}
     </div>
-    
   );
 };
 
+HomeGallery.propTypes = {
+  locations: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      cover: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 export default HomeGallery;

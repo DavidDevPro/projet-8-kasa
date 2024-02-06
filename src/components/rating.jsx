@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { FaStar } from "react-icons/fa6";
 
 const Rating = ({ rating }) => {
@@ -18,4 +19,7 @@ const Rating = ({ rating }) => {
   );
 };
 
+Rating.propTypes = {
+  rating: PropTypes.number.isRequired,
+};
 export default Rating;

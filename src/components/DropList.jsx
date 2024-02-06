@@ -1,5 +1,5 @@
 import { useState } from "react";
-import pt from "prop-types";
+import propTypes from "prop-types";
 import arrowIcon from "../assets/img/arrow.svg";
 
 const DropList = ({ title, children }) => {
@@ -25,8 +25,8 @@ const DropList = ({ title, children }) => {
 };
 
 DropList.propTypes = {
-  title: pt.string.isRequired,
-  children: pt.node.isRequired,
+  title: propTypes.string.isRequired,
+  children: propTypes.node.isRequired,
 };
 
 export default DropList;
