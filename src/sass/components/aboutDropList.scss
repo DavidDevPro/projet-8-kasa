@@ -4,6 +4,9 @@
 .dropListContent {
   max-width: 1024px;
   margin: auto;
+  &:last-child {
+    margin-bottom: 293px;
+  }
 
   .headDropList {
     @include transition;
