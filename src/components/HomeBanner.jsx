@@ -1,4 +1,3 @@
-import React from "react";
 import homeBanner from "../assets/img/homeBanner.png";
 
 const HomeBanner = () => {

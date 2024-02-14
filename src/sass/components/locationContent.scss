@@ -88,19 +88,22 @@
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
+        @media screen and (max-width: 768px) {
+          gap: 1px;
+        }
 
         .originStar {
           color: $gallery_color;
           font-size: 2.3em;
           @media screen and (max-width: 768px) {
-            font-size: 1.8em;
+            font-size: 1.2em;
           }
         }
         .redStar {
           color: $third_color;
           font-size: 2.3em;
           @media screen and (max-width: 768px) {
-            font-size: 1.8em;
+            font-size: 1.2em;
           }
         }
       }
@@ -124,6 +127,12 @@
       max-width: 582px;
       width: 100%;
       margin: 0 0 235px;
+      @media screen and (max-width: 768px) {
+        margin: 0;
+        &:nth-child(2) {
+          margin-bottom: 375px;
+        }
+      }
     }
   }
 }

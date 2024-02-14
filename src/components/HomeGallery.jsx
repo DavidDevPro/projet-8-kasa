@@ -1,16 +1,15 @@
 import PropTypes from "prop-types";
-import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const HomeGallery = ({ locations }) => {
   return (
     <div className="gallery">
       {locations.map((location) => (
         <div key={location.id} className="locationCard">
-          <NavLink to={`/locations/${location.id}`}>
+          <Link to={`/locations/${location.id}`}>
             <img src={location.cover} alt={`image de ${location.title}`} />
             <h2>{location.title}</h2>
-          </NavLink>
+          </Link>
         </div>
       ))}
     </div>

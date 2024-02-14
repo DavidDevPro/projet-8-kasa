@@ -11,9 +11,10 @@ const DropList = ({ title, children }) => {
 
   return (
     <div className="dropListContent">
-      <div className="headDropList" onClick={HandleToggle}>
+      <div className="headDropList">
         <h3>{title}</h3>
         <img
+          onClick={HandleToggle}
           src={arrowIcon}
           alt="flèche"
           className={`arrow ${clicked ? "turn" : ""}`}

@@ -1,4 +1,3 @@
-import React from "react";
 import aboutBanner from "../assets/img/aboutBanner.png";
 
 const AboutBanner = () => {
